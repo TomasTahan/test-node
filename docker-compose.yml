@@ -1,0 +1,10 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  node-polling:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: node-polling
+    restart: always
